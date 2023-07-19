@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5</title>
+    <style>
+        dialog{
+            background-color: antiquewhite;
+            color: black;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <center><h3>Details  Tag..</h3>
+    <p>This tag is used to specify additional details on the web page that the user can view or hode on demand </p></center><hr>
+
+    <details>
+        <h5>HTML</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, provident reprehenderit quod sed, expedita explicabo cum tenetur alias veritatis, quis nostrum quos. Deserunt eos voluptatum fugit hic reiciendis non id?</p>
+    </details>
+    <details>
+        <h5>CSS</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, provident reprehenderit quod sed, expedita explicabo cum tenetur alias veritatis, quis nostrum quos. Deserunt eos voluptatum fugit hic reiciendis non id?</p>
+    </details>
+    <details>
+        <h5>JS</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, provident reprehenderit quod sed, expedita explicabo cum tenetur alias veritatis, quis nostrum quos. Deserunt eos voluptatum fugit hic reiciendis non id?</p>
+    </details>
+    <hr>
+    <center><h3>Summary tag</h3></center>
+    <details><summary>HTML</summary>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem atque numquam voluptate commodi molestiae ipsa neque voluptatem sequi. Tempore earum aperiam eius doloremque iste eos magnam, tenetur officia voluptas odio?</p>
+    </details>
+    <details><summary>CSS</summary>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem atque numquam voluptate commodi molestiae ipsa neque voluptatem sequi. Tempore earum aperiam eius doloremque iste eos magnam, tenetur officia voluptas odio?</p>
+    </details>
+
+    <details><summary>JSS</summary>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem atque numquam voluptate commodi molestiae ipsa neque voluptatem sequi. Tempore earum aperiam eius doloremque iste eos magnam, tenetur officia voluptas odio?</p>
+    </details>
+    <hr>
+
+    <center><h3>Time tag</h3>
+    <p><b>HTML time</b> tag is used to define date and time. It displays time value in a 24hrs clock or a precise date in a Gregorian calendar in HTML </p></center>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptas aut beatae, velit saepe obcaecati consequuntur incidunt iure voluptates quos corporis impedit iste corrupti tempora eaque veniam maiores, neque qui.</p>
+        <p>Lorem ipsum dolor sit amet <time>2:30</time> consectetur adipisicing elit. Maxime, pariatur nulla odio impedit corporis nobis, est aut ipsa architecto quisquam alias iusto maiores sequi possimus ullam ducimus quos blanditiis nam!</p>
+        <hr>
+
+    <center><h3>Dialog tag</h3>
+    <p><b>(This tag to create a new popup dailog on a web page.)</b></p>
+    </center>
+    <hr>
+    <dialog id="dialogID">
+        <button type="button" id="closeButton">&times;</button>
+        <h1>Full Stack</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati eum enim aliquid nemo numquam, suscipit, eligendi ipsa autem aut qui velit temporibus dolore rerum ab pariatur cum voluptatum placeat fugiat.</p>
+    </dialog>
+    <button type="button" id="openDialog">Open Dialog Button</button>
+
+    <script>
+        document.getElementById("openDialog").onclick = function(){
+            document.getElementById("dialogID").show();
+        };
+        document.getElementById("closeButton").onclick = function(){
+            document.getElementById("dialogID").close();
+        };
+        
+    </script>
+</body>
+</html>

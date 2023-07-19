@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - 5</title>
+    <style>
+        progress{
+            width: 100%;
+            height: 30px;
+            /*border: 1px solid transparent;*/
+           
+            
+        }/*
+        progress::-webkit-progress-bar{
+            background-color: red;
+          }
+        progress::-webkit-progress-value {
+            background-color: blue; 
+             */
+          
+          
+    </style>
+</head>
+<body>
+    <center><h3>Progress Tag</h3></center><hr>
+    <h3>Default Progress Tag</h3>
+    <progress></progress>
+
+    <h3>Static Progress Tag</h3>
+    <progress min="1" max="100" value="80"></progress>
+
+    <h3>Dynamic progress tag</h3>
+    <progress min="1" max="100" id="progress"></progress>
+
+    <script>
+        let min=1;
+        function starProgress(){
+        if(min<100){
+            min++;
+            document.getElementById("progress").value = min;
+        }
+    }
+    setInterval("starProgress()",1000);
+    </script>
+
+
+</body>
+</html>
